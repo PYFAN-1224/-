@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es5",//向下兼容浏览器
+    "module": "amd",
+    "lib": [
+      "dom",
+      "es5",
+      "es6",
+      "ES2018"
+    ],
+    "noEmitHelpers": true,
+    "noEmitOnError": true,
+    "strictPropertyInitialization": false,
+    "jsx": "react",
+    "jsxFactory": "tsx",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "moduleResolution": "node",
+    "types": [
+      "arcgis-js-api"
+    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "outDir": "dist/js",//输出文件夹
+    "importHelpers": true,
+  },
+  "include": [
+    "./src/**/*",
+    "node_modules/arcgis-js-api/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+//由在终端输入tsc--init生成的配置文件
